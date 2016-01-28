@@ -1,0 +1,164 @@
+/* -- general -- */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+/* -- navbar -- */
+.navbar-default {
+	background: #FFFFFF;
+	border-bottom-color: #DFDFDF;
+	height: 60px;
+	margin-bottom: 0;
+}
+.navbar-header .navbar-toggle {
+	margin-top: 12px;
+}
+.navbar-header .navbar-brand {
+	height: 60px;
+	padding: 30px 10px 0 10px;
+	font-size: 36px;
+	line-height: 0;
+	color: #111;
+	white-space: nowrap;
+}
+.navbar-header .navbar-brand:hover: {
+  color: #00B3B7;
+}
+.navbar-default .navbar-brand:focus {
+	color: #111;
+}
+.navbar-default .navbar-nav {
+	background: #FFFFFF;
+	margin-top: 0;
+}
+.navbar-default .navbar-nav>li>a {
+	background-color: #FFFFFF;
+  color: #111;
+	padding: 10px;
+}
+.navbar-default .navbar-brand:hover {
+	color: #00B3B7;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #00B3B7;
+}
+.navbar-default a.navbar-brand:hover .navbar-default .navbar-nav>li>a:hover {
+	background-color: #DFDFDF;
+}
+
+.navbar-default .navbar-nav>li>a.selected { color: #00B3B7; }
+
+@media screen and (min-width: 768px) {
+	.navbar-default { height: 100px; }
+	.navbar-header { width: 100%; }
+	.navbar-header .navbar-brand { height: 70px; padding: 40px 0 0 15px; font-size: 42px; }
+	.navbar-default .navbar-nav>li>a { display: inline; }
+}
+
+@media screen and (min-width: 992px) {
+	.navbar-default { height: 120px; }
+	.navbar-header .navbar-brand { height 80px; padding: 45px 10 0px 15px; font-size: 48;}
+	.navbar-default .navbar-nav>li>a { display: inline; }
+}
+
+/* -- home -- */
+#home {
+  background-image:url('http://iq.lt/wp-content/uploads/2014/09/winter-city-snow-landscape-free-desktop-wallpaper-1920x1200.jpg');
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#home .container {
+  position: relative;
+  top: 700px;
+}
+#home h1 {
+  color: #3F3F3F;
+  font-size: 48px;
+  text-align: center;
+}
+
+/* -- about -- */
+#about {
+  text-align: center;
+}
+
+/* -- portfolio -- */
+#portfolio {
+  text-align: center;
+}
+
+/* -- contact -- */
+#contact {
+  text-align: center;
+}
+a.btn-default {
+  height: 44px;
+  border-radius: 0;
+  border: 0;
+  width: 180px;
+  text-align: left;
+  margin: 0 5px 10px 0;
+  position: relative;
+  background-color: #FFFFFF;
+  padding: 10px;
+  transition: all .35s;
+  padding: 0;
+  line-height: 47px;
+  overflow: hidden;
+}
+a.btn-default i {
+  display: block;
+  float: left;
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  font-size: 24px;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1;
+}
+/* -- for whatever reason email icon is slightly to the right, so move it left 2 pixels --*/
+a.email-btn i {
+  left: 10px;
+}
+a.btn-default span {
+  position: relative;
+  z-index: 1;
+  padding-left: 55px;
+}
+a.fcc-btn span {
+  position: relative;
+  z-index: 1;
+  padding-left: 35px;
+}
+a.btn-default:after {
+  content: '';
+  display: block;
+  width: 44px; height: 44px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; transition: all .35s;
+}
+a.github-btn:after {
+  background-color: #171515;
+}
+a.fcc-btn:after { 
+  background-color: #006400;
+}
+a.email-btn:after {
+  background-color: #0000FF;
+}
+a.btn-default:hover, a.btn-default:focus {
+  background-color: #FFFFFF; color: #FFFFFF;
+}
+a.btn-default:hover:after {
+  width: 100%;
+}
